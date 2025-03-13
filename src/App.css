@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -15,13 +18,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.App-header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
 
 .App-link {
@@ -35,4 +44,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.App-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
